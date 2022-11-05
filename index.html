@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="top">
+        <div class="top__container">
+            <h1 class="top__logo-text unselectable"><a href="index.html">Color Flipper!</a></h1>
+            <nav class="top__nav unselectable">
+                <button class="top__nav-item rgbNav">RGB</button>
+                <button class="top__nav-item hexNav">HEX</button>
+                <button class="top__nav-item hslNav">HSL</button>
+            </nav>
+            <div class="hamburger">
+                <div class="hamburger__bar"></div>
+            </div>
+        </div>
+    </header>
+    <nav class="mobile__nav">
+        <button class="mobile__nav-item mob-btn1">RGB</button>
+        <button class="mobile__nav-item mob-btn2">HEX</button>
+        <button class="mobile__nav-item mob-btn3">HSL</button>
+    </nav>
+    <main>
+        <section class="content">
+            <div class="content-block">
+                <div class="content-block__alert-positive">Copied Successfull</div>
+                <div class="content-block__alert-pick"></div>
+                <div class="content-block__alert-alert"></div>
+                <div class="content-block__header"><input class="unselectable" type="text"
+                        value="Pick your color format!" readonly><img src="/img/copy-img.png" alt="copy image"></div>
+                <div class="content-block__buttons">
+                    <button class="content-block__buttons-item btn1">RGB</button>
+                    <button class="content-block__buttons-item btn2">HEX</button>
+                    <button class="content-block__buttons-item btn3">HSL</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
