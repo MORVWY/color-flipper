@@ -174,22 +174,22 @@ main {
             padding: 50px 0;
             position: relative;
 
-            &__alert-positive {
+            &__copy-alert {
                 display: none;
                 height: 0;
             }
 
-            &__alert-pick {
+            &__warning-alert {
                 display: none;
                 height: 0;
             }
 
-            &__alert-alert {
+            &__pick-alert {
                 display: none;
                 height: 0;
             }
 
-            .positive-copy {
+            .copy-alert__block {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -204,6 +204,40 @@ main {
                 color: white;
                 font-size: 1.2rem;
                 font-weight: 700;
+            }
+
+            .warning-alert__block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 250px;
+                height: 50px;
+                background-color: #ff2e63;
+                right: -10%;
+                top: -15%;
+                border-radius: 10px;
+                box-shadow: rgba(229, 10, 72, 0.1) 0px 4px 12px;
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+
+            .pick-alert__block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 200px;
+                height: 50px;
+                background-color: $main-color;
+                right: -10%;
+                top: -15%;
+                border-radius: 10px;
+                box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 700; 
             }
 
             &__header {
@@ -317,12 +351,20 @@ main {
 }
 
 // Other classes
-.ovhidden {
+.overflow-hidden {
     overflow: hidden;
 }
 
-.displblock {
+.display-block {
     display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-iB {
+    display: inline-block !important;
 }
 
 .unselectable {
