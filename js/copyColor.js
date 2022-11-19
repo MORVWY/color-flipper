@@ -23,8 +23,8 @@ copyImg.addEventListener('click', () => {
 });
 
 copyImg.addEventListener('mouseenter', () => {
-    copyImg.setAttribute('src', '/img/copy-imgwhite.png');
+    copyImg.setAttribute('src', 'img/copy-imgwhite.png');
 });
 copyImg.addEventListener('mouseleave', () => {
-    copyImg.setAttribute('src', '/img/copy-img.png');
+    copyImg.setAttribute('src', 'img/copy-img.png');
 });
