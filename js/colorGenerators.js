@@ -1,5 +1,13 @@
+    import {
+        hexArray
+    } from './hexColors.js';
+
+    import {
+        body,
+        input
+    } from './app.js';
+
     // Random colors logic
-    import { hexArray } from './hexColors.js';
 
     function getRandomRGBColor() {
         const r = Math.floor(Math.random() * 256);
@@ -25,4 +33,42 @@
         return Math.floor(Math.random() * hexArray.length);
     }
 
-    export { getRandomRGBColor, getRandomHslColor, getRandomHexColor};
+    // Random color generator
+
+    function generateRgbColor() {
+        const rRgbNumber = getRandomRGBColor();
+
+        input.value = `${rRgbNumber};`;
+        input.style.color = rRgbNumber;
+        input.style.textShadow = `0px 1px 2px ${rRgbNumber}`;
+        body.style.backgroundColor = rRgbNumber;
+    }
+
+    function generateHexColor() {
+        const randomHex = getRandomHexColor();
+        const colorHex = hexArray[randomHex];
+
+        input.value = `${colorHex};`;
+        input.style.color = colorHex;
+        body.style.backgroundColor = colorHex;
+        input.style.textShadow = `0px 1px 2px ${colorHex}`;
+    }
+
+    function generateHslColor() {
+        const rHsLNumber = getRandomHslColor();
+
+        input.value = `${rHsLNumber};`;
+        input.style.color = rHsLNumber;
+        body.style.backgroundColor = rHsLNumber;
+
+        input.style.textShadow = `0px 1px 2px ${rHsLNumber}`;
+    }
+
+    export {
+        getRandomRGBColor,
+        getRandomHslColor,
+        getRandomHexColor,
+        generateRgbColor,
+        generateHexColor,
+        generateHslColor
+    };
