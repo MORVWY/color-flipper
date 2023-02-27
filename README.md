@@ -2,6 +2,7 @@
 MAIN INFORMATION
 --------------------------------------------------------
 Randomly generates color code in 3 formats.
+
 MAIN FEATURES
 --------------------------------------------------------
 1. On main page you can choose 1 of 3 color formats: rgb, hex, hsl.
